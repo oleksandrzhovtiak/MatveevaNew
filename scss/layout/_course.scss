@@ -1,0 +1,100 @@
+.course{
+	background:#302D36;
+	margin-top: 15px;
+	width: 100%;
+	margin-bottom: 15px;
+	overflow: hidden;	
+	position: relative;
+
+	.container{
+		@media (min-width: $mobile-small) and (max-width: $mobile){
+			@include size(100%);
+			position: relative;
+			left:-30%;	
+			}
+			@media (min-width: $mobile) and (max-width: $mobile-medium) and (orientation: landscape){
+				@include size(100%);
+			position: relative;
+			left:-30%;
+			}	
+	}
+
+}
+.course__img{
+	max-width: 50%;
+    min-width: 50%;
+	min-height: calc(100% - 150px);
+    position: absolute;
+    right: 50%;
+	top: 150px;
+	@media (min-width: $mobile-small) and (max-width: $mobile){
+		position: static;
+		max-width: 100%;
+	}
+	@media (min-width: $mobile) and (max-width: $mobile-medium) and (orientation: landscape){
+		position: static;
+		max-width: 100%;
+	}
+
+	
+}
+.course__title{
+	text-align: center;
+	margin-top: 18px;
+	padding:18px;
+	margin-bottom: 22px;
+	@media (min-width: $mobile-small) and (max-width: $mobile) {
+	width: 100%;
+	}
+	@media (min-width: $mobile) and (max-width: $mobile-medium) and (orientation: landscape){
+		width: 100%;
+	}
+
+
+}
+
+h1{
+	color: #fff;
+	text-transform: uppercase;
+	font: 900 48px $monst;
+	line-height: 59px;
+	}
+.course__h2 {
+	font: 900 24px $monst;
+	line-height: 29px;
+	color:#000;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.text {
+	font-size: 14px ;
+	line-height: 35px;
+	text-align: left;
+	color: #746E73;
+	
+
+}
+.course__end a{
+	text-decoration: none;
+	font: 900 18px $monst;
+	line-height: 22px;
+	text-align: left;
+	color: #746E73;
+	text-transform: uppercase;
+	max-width: 125px;
+	max-height: 26px;
+	margin-top: 21px;
+	
+	}
+
+.course__day{
+	margin-top: 35px;	
+}
+
+.course__end {
+	padding-bottom: 20px;
+}
+
+
+

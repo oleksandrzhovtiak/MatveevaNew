@@ -1,0 +1,78 @@
+.footer {
+    background: #746E73;
+      width: 100%;
+      height: 88px;
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+
+      img {
+         @media (min-width: $mobile-small) and (max-width: $mobile) {
+            width: 25px;
+            padding: 20px 0; 
+               }
+               @media (min-width: $mobile) and (max-width: $mobile-medium) and (orientation: landscape) {
+               width: 35px;
+               padding: 25px 0; 
+            }        
+
+      }
+
+
+
+      @media (min-width: $mobile-small) and (max-width: $mobile) {
+         background:#C4C4C4;
+         margin-top: 580px;
+         height: auto;
+                         
+      }
+
+      @media (min-width: $mobile) and (orientation: landscape) and (max-width: $mobile-medium){
+         margin-top: 0;
+      }
+                  
+      &__icon {
+         display: flex;
+         padding-top: 10px;
+         
+      }
+
+    .footer__li a{
+       height: 100%;
+       width: 100%;
+       padding-right: 40px;
+
+             
+      }
+            
+
+     #telefon  {
+        margin-left: 20px;
+        font-size: 45px;
+        color: #000;
+        text-decoration: none;
+        position: relative;
+        top: 35%;
+        @media (min-width: $mobile-small) and (max-width: $mobile){
+         font-size: 14px;
+      }
+        
+     }
+     .facebook{
+        margin-left: 100px;
+        @media (min-width: $mobile-small) and (max-width: $mobile) {
+         margin-left: 15px;
+      }
+      
+     }
+     
+
+   }
+   
+
+
+
+
+
+
+

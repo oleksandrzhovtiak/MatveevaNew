@@ -1,0 +1,32 @@
+.header{
+    overflow: hidden;
+    width: 100%;
+
+    &__img-mask {
+    @include size(100%);
+    max-width: initial;
+    position: relative;
+   
+    }    
+        &__mask{ 
+        background: url('../images/header-bg.jpg') left no-repeat;
+        background-size: cover;  
+        position: relative;
+     
+     
+         &::before {
+         @include size(100%);
+         @include pos($l: 0, $t: 0);
+         content: '';
+         background: rgba(187, 107, 217, 0.2);
+     } 
+
+        &::after {
+        @include size(100%, 3px);
+        @include pos($l: 0, $b: 0);
+        content: '';
+        background: #000;
+     }
+  }  
+  
+}

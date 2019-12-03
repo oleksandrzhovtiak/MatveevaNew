@@ -1,0 +1,57 @@
+.time{
+    margin-top: 15px;
+    overflow: hidden;
+    color: #000;
+    font-size: 14px;
+    line-height: 17px;
+    background:url(../images/icon/subtract__time.svg) no-repeat, url(../images/matveyeva_back.jpg) no-repeat 35px center;
+    background-color: #3F3A49;
+    @media (min-width: $mobile-small) and (max-width: $mobile){
+        background: url(../images/maskgroup.png) no-repeat 50% 17%, #3F3A49,
+         }
+    @media (min-width: $mobile) and (orientation: landscape) and (max-width: $mobile-medium){
+        background: url(../images/maskgroup.png) no-repeat 50% 10%, #3F3A49,
+    }     
+    
+&__h2{
+    padding-top: 30px;
+    @media (min-width: $mobile-small) and (max-width: $mobile), (min-width: $mobile) and (orientation: landscape) and (max-width: $mobile-medium) {
+        margin-left: -35%;
+                              
+        }
+ }
+
+.icon{
+        margin-top: 5px;
+        & p{
+        padding-left: 100px;
+        padding-bottom: 30px;
+        position: relative;
+        bottom: 30px;
+       
+    }
+}
+
+.time__list{
+    @media (min-width: $mobile-small) and (max-width: $mobile) {
+        width: 150%;
+        position: relative;
+        left: -70%;
+        top:230px;
+        background: #3F3A49;
+        padding-bottom: 230px;
+    }
+    @media (min-width: $mobile) and (orientation: landscape) and (max-width: $mobile-medium){
+        width: 150%;
+        position: relative;
+        left: -60%;
+        top:300px;
+        background: url(../images/Maskgroupform.png) 75% 90% no-repeat;
+        padding-bottom: 300px;
+        margin-bottom: 170px;
+    }
+
+}
+
+
+}
