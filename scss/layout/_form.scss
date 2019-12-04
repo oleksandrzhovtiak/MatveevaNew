@@ -15,7 +15,7 @@
         max-height: 400px;
         &::after {
             content: ''; 
-            @include size(100%, 4px);
+            @include size(100%, 6px);
             background: #000;
         }
       
@@ -68,8 +68,8 @@
               line-height: 25px;
               margin-left: -10px;
               padding-left: 15px; 
-              margin-bottom:-47px;
-              height: 200px;             
+              margin-bottom:-42px;
+              height: 210px;             
         }
         @media (min-width: $mobile) and (orientation: landscape) and (max-width: $mobile-medium){
             line-height: 25px;
