@@ -1,73 +1,166 @@
 .footer {
     background: #746E73;
-      width: 100%;
       height: 88px;
       margin-top: 60px;
+      width: 100%;
       display: flex;
       justify-content: space-between;
-
-      img {
-         @media (min-width: $mobile-small) and (max-width: $mobile) {
-            width: 25px;
-            padding: 20px 0; 
-               }
-               @media (min-width: $mobile) and (max-width: $mobile-medium) and (orientation: landscape) {
-               width: 35px;
-               padding: 25px 0; 
-            }        
-
-      }
-
-
-
+         
       @media (min-width: $mobile-small) and (max-width: $mobile) {
          background:#C4C4C4;
          margin-top: 580px;
-         height: auto;
-                         
+         height: 55px;
+         max-width: 100%;    
+         position: relative; 
+         overflow-x: hidden;      
       }
 
       @media (min-width: $mobile) and (orientation: landscape) and (max-width: $mobile-medium){
-         margin-top: 0;
+         overflow-x: hidden;
       }
-                  
+      
+
+
       &__icon {
          display: flex;
          padding-top: 10px;
-         
+                         
+         .fb {
+            background: url('../images/icon/sprite.png');
+            background-position:0px 0px;
+            display: inline-block;
+            @media (min-width: $mobile-small) and (max-width: $mobile) {
+               background: url('../images/icon/facebook.svg') no-repeat;
+               position: absolute;
+               z-index: 1;
+               left: 15px;
+            }
+            @media (min-width: $mobile) and (orientation: landscape) and (max-width: $mobile-medium){
+            
+            }
+
+          
+                    
+         }
+
+         .fb:active{
+            background: url('../images/icon/sprite.png');
+            background-position: 0px -80px;
+            display: inline-block;
+            @media (min-width: $mobile-small) and (max-width: $mobile) {
+               background: url('../images/icon/facebook.svg') no-repeat;
+            }
+            
+
+            }
+
+         .in {
+            background: url('../images/icon/sprite.png') no-repeat;
+            background-position: -80px 0px;
+            display: inline-block;
+            @media (min-width: $mobile-small) and (max-width: $mobile) {
+               background: url('../images/icon/instagram.svg') no-repeat;
+               position: absolute;
+               z-index: 1;
+               left: 55px;
+            }
+
+            
+         }
+         .in:active{
+            background: url('../images/icon/sprite.png');
+            background-position: -80px -80px;
+            display: inline-block;
+            @media (min-width: $mobile-small) and (max-width: $mobile) {
+               background: url('../images/icon/instagram.svg') no-repeat;}
+         }
+
+         .tl {
+            background: url('../images/icon/sprite.png');
+            background-position: -160px 0px;
+            display: inline-block;
+            @media (min-width: $mobile-small) and (max-width: $mobile) {
+               background: url('../images/icon/telegram.svg') no-repeat;
+               position: absolute;
+               z-index: 1;
+               left: 95px;
+            }
+            @media (min-width: $mobile) and (orientation: landscape) and (max-width: $mobile-medium){
+               margin-left: -20px;
+            }
+
+
+         }
+         .tl:active{
+            background: url(../images/icon/sprite.png);
+            background-position: -160px -80px;
+            display: inline-block;
+            @media (min-width: $mobile-small) and (max-width: $mobile) {
+            background: url('../images/icon/telegram.svg') no-repeat;
+            }
+         }
+
+         .what {
+            background: url(../images/icon/sprite.png);
+            background-position: -240px 0px;
+            display: inline-block;
+            @media (min-width: $mobile-small) and (max-width: $mobile) {
+               background: url('../images/icon/whatsapp.svg') no-repeat;
+               position: absolute;
+               z-index: 1;
+               left: 170px;
+            }
+            
+         }
+         .what:active{
+            background: url(../images/icon/sprite.png);
+            background-position: -240px -80px;
+            display: inline-block;
+            @media (min-width: $mobile-small) and (max-width: $mobile) {
+               background: url('../images/icon/whatsapp.svg') no-repeat;
+            }
+         }
+
+         .social{
+            margin-left: 30px;
+         }
+
       }
 
     .footer__li a{
        height: 100%;
        width: 100%;
-       padding-right: 40px;
-
-             
+       padding-right: 70px;
+            
       }
             
-
      #telefon  {
         margin-left: 20px;
         font-size: 45px;
         color: #000;
         text-decoration: none;
         position: relative;
-        top: 35%;
+        top: 25%;
         @media (min-width: $mobile-small) and (max-width: $mobile){
          font-size: 14px;
+         position: absolute;
+         left: 190px;
+      }
+      @media (min-width: $mobile) and (orientation: landscape) and (max-width: $mobile-medium){
+         font-size: 35px;
       }
         
      }
      .facebook{
         margin-left: 100px;
-        @media (min-width: $mobile-small) and (max-width: $mobile) {
-         margin-left: 15px;
+        @media (min-width: $mobile) and (orientation: landscape) and (max-width: $mobile-medium){
+         margin-left: 25px;
       }
-      
+          
      }
-     
+    
 
-   }
+}  
    
 
 
